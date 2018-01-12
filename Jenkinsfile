@@ -2,6 +2,10 @@ pipeline {
 
     agent any
 
+    tools {
+        mvn 'Maven3_5_2'
+    }
+
     stages {
 
         stage('Build') {
